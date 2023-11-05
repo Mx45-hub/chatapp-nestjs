@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mx-auto py-12">
+        <h1 class="text-2xl font-bold mb-4 text-center">Register</h1>
+        <form method="POST" action="/add" class="max-w-md mx-auto bg-white p-4 rounded shadow">
+          <div class="mb-4">
+            <label for="username" class="block text-gray-700">Username:</label>
+            <input type="text" class="form-input w-full" id="username" name="username" placeholder="Enter username">
+          </div>
+          <div class="mb-4">
+            <label for="password" class="block text-gray-700">Password:</label>
+            <input type="password" class="form-input w-full" id="password" name="password" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+      </div>
+
+</body>
+</html>
