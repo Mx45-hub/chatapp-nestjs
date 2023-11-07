@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { authentity } from 'src/auth/auth.entity';
+import { authentity } from 'src/auth/Data/auth.entity';
 import { Repository } from 'typeorm';
 
 export type User = any;
@@ -29,4 +29,3 @@ export class UsersService {
     return this.authrepo.save(user);
   }
 }
-

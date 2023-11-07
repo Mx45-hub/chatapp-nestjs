@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { UsersService } from './users.service';
-import { authentity } from 'src/auth/auth.entity';
+import { authentity } from 'src/auth/Data/auth.entity';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { AuthModule } from 'src/auth/auth.module';
+import { AuthModule } from 'src/auth/Data/auth.module';
 
 @Module({
     imports: [TypeOrmModule.forRoot({

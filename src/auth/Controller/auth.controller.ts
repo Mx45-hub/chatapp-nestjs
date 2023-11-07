@@ -1,8 +1,8 @@
 import { Body, Controller, Post, HttpCode, HttpStatus, Get, Render, Req, Session, Res, Request } from '@nestjs/common';
-import { AuthService } from './auth.service';
+import { AuthService } from '../Service/auth.service';
 import * as session from 'express-session';
 import { Socket } from 'socket.io';
-import { setUserSocket } from 'src/socketUtils';
+import { setUserSocket } from 'src/App/Socket-Gateway/socketUtils';
 
 
 

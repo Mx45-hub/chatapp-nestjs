@@ -1,5 +1,5 @@
 import { Controller, Get, Post, Render, Req, Res, Session, Body } from '@nestjs/common';
-import { AppService } from './app.service';
+import { AppService } from '../App-Service/app.service';
 import { Server, Socket } from 'socket.io';
 import { ConnectedSocket, MessageBody, OnGatewayConnection, OnGatewayDisconnect, SubscribeMessage, WebSocketGateway, WebSocketServer } from '@nestjs/websockets';
 import { readFileSync } from 'fs';
@@ -7,9 +7,9 @@ import { join } from 'path';
 import { Response } from 'express';
 import Handlebars from "handlebars";
 import { AuthGuard } from '@nestjs/passport';
-import { authdto } from './auth/authdto';
-import { AuthService } from './auth/auth.service';
-import { UsersService } from './users/users.service';
+import { authdto } from '../../auth/Data/authdto';
+import { AuthService } from '../../auth/Service/auth.service';
+import { UsersService } from '../../users/users.service';
 
 
 @Controller()

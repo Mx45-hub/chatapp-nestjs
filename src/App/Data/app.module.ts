@@ -1,15 +1,15 @@
 import { Module } from '@nestjs/common';
 
-import { AppGateway } from './app.gateway';
-import { AuthService } from './auth/auth.service';
-import { UsersService } from './users/users.service';
-import { AppController } from './app.controller';
-import { AuthController } from './auth/auth.controller';
-import { AuthModule } from './auth/auth.module';
-import { UsersModule } from './users/users.module';
-import { AppService } from './app.service';
+import { AppGateway } from '../Socket-Gateway/app.gateway';
+import { AuthService } from '../../auth/Service/auth.service';
+import { UsersService } from '../../users/users.service';
+import { AppController } from '../App-Controller/app.controller';
+import { AuthController } from '../../auth/Controller/auth.controller';
+import { AuthModule } from '../../auth/Data/auth.module';
+import { UsersModule } from '../../users/users.module';
+import { AppService } from '../App-Service/app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { authentity } from './auth/auth.entity';
+import { authentity } from '../../auth/Data/auth.entity';
 
 @Module({
   imports: [AuthModule, UsersModule,
